@@ -1,7 +1,11 @@
 import Hero from './_components/Hero'
+import Banner from './_components/Banner'
 
 export default function Home() {
   return (
-    <Hero />
+    <div className='py-24'>
+      <Hero />
+      <Banner />
+    </div>
   )
 }
