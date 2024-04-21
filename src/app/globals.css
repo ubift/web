@@ -5,3 +5,9 @@
 ::selection {
   background-color: #000000;
 }
+
+.header-glass-background {
+  -webkit-backdrop-filter: blur(16px);
+  background-color: rgba(17, 17, 17, 0.7);
+  backdrop-filter: saturate(100%) blur(16px);
+}
