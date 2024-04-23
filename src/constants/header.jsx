@@ -8,11 +8,11 @@ export const logo = [
 export const menuItems = [
   {
     name: 'Projects',
-    href: '/',
+    href: '/projects',
   },
   {
     name: 'Why us?',
-    href: '/',
+    href: '/why-us',
   },
 ]
 
