@@ -1,11 +1,34 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 
 import { button, logo, menuItems } from '@/constants/header'
 
 export default function Header() {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY || window.pageYOffset
+
+      if (scrollY > 90) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <header className='sticky top-4 w-auto flex justify-between items-center p-2 rounded-md border-[1px] border-[#222] header-glass-background'>
+    <header className={`sticky top-4 w-auto flex justify-between items-center p-2 rounded-md header-glass-background ${scrolled && 'border-[1px] border-[#222]'}`}>
       <div>
         {logo.map((item, index) => (
           <Link href={item.href} className='gap-1 flex items-center justify-center font-bold text-xl hover:opacity-70 transition-all' key={index}>
