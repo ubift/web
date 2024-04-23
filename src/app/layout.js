@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 
 import Header from './_components/Header'
+import Footer from './_components/Footer'
 import ScrollProgressBar from './_components/ScrollProgressBar'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <ScrollProgressBar />
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
