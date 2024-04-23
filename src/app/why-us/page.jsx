@@ -2,8 +2,8 @@ export default function Page() {
   return (
     <div className='gap-12 flex items-center justify-center py-24'>
       <div className='gap-6 flex flex-col items-center text-center mb-72'>
-        <h1 className='text-7xl font-extrabold'>Why Us?</h1>
-        <p className='text-primary-gray text-xl font-medium'>
+        <h1 className='text-7xl font-extrabold max-[480px]:text-6xl'>Why Us?</h1>
+        <p className='text-primary-gray text-xl font-medium max-[480px]:text-base'>
           Choose Ubift Team for seamless website creation effortlessly tailored to your needs.
           Our intuitive tools enable users of all backgrounds to create stunning websites without the hassle of design or coding.
           From freelancers to agencies and content creators, we offer versatile solutions to suit every project and budget.
