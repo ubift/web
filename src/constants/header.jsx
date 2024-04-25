@@ -19,6 +19,6 @@ export const menuItems = [
 export const button = [
   {
     name: 'Contact',
-    href: '/',
+    href: '/contact',
   },
 ]
